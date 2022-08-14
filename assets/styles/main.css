@@ -1,0 +1,153 @@
+:root{
+    --mainTextColor:#000;
+    --secondaryTextColor:rgb(51, 51, 51);
+    --mainLinkColor:#0dadb8;
+    --mainBorderColor:rgba(218, 218, 218);
+    --mainBgColor:rgb(249, 250, 251);
+}
+
+*{
+    color : var(--mainTextColor);
+    line-height: 1.5em;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+    background-color: var(--mainBgColor);
+    font-size: 1em;
+}
+
+p, span, li{
+    color : (--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#wrapper--hero{
+    font-size: large;
+    line-height: 1em;
+}
+
+#profil-picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#social--list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#social--list a{
+    font-size: 0.9em;
+    padding: 4px;
+    color: var(--secondaryTextColor);
+}
+
+#social--list a:hover{
+    color: var(--mainLinkColor);
+    box-shadow: 0 1px 0 0;
+    transition: 2s;
+}
+
+#qualification--list{
+    list-style: none;
+}
+
+#wrap--techstack--item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid #ddd;
+    padding: 0.5rem 1em;
+    border-radius: 5px;
+}
+
+#work--history-wrapper{
+    border: 1px solid #ddd;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: #ddd;
+    height: 1px;
+    margin-bottom: 3em;
+}
+
+.card--project{
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin: 1em;
+}
+
+.card--project a span{
+    transition: .3s;
+    color: var(--mainTextColor);
+
+}
+
+.card--project a span:hover{
+    color: var(--mainLinkColor);
+}
+
+@media(max-width:600px){
+    #wrapper--hero{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #profil-picture{
+        width: 200px;
+        height: 200px;
+    }
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #work--history-wrapper{
+        padding-left: 0;
+        border-left: none;
+    }
+
+}
