@@ -129,6 +129,14 @@ li{
     color: var(--mainLinkColor);
 }
 
+.wrapper--section--footer{
+	border-bottom : 1px solid #ddd;
+}
+
+.wrapper--progress{
+	margin-left : 20px;
+}
+
 @media(max-width:600px){
     #wrapper--hero{
         flex-direction: column;
