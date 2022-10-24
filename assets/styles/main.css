@@ -5,7 +5,9 @@
     --mainBorderColor:rgba(218, 218, 218);
     --mainBgColor:rgb(249, 250, 251);
 }
-
+ul li :before {
+  content: '✓';
+}
 *{
     color : var(--mainTextColor);
     line-height: 1.5em;
@@ -84,7 +86,11 @@ li{
 }
 
 #qualification--list{
-    list-style: none;
+    list-style : none;
+}
+
+#qualification--list :before {
+  content: '✓';
 }
 
 #wrap--techstack--item{
